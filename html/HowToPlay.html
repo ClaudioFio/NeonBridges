@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<title>How to play</title>
+
+		<script type="text/javascript" src="./../js/utility.js"></script>
+		<script type="text/javascript" src="./../js/menu.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./../css/menu.css">
+		<link rel="shortcut icon" type="image/png" href="./../css/images/favicon.png" />
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">		
+	</head>
+
+	<body onload="introMenu()">
+		<div class="popup">
+			<div id="title">
+				<a href="./../index.php">
+					<img class="arrow" src="./../css/images/backarrow.png" alt="Back" style="float: left;">
+				</a>
+
+				<h1>How to play</h1>
+			</div>
+			<p>		
+				All'avvio l'utente si troverà nella schermata di login, dov'è possibile accedere con il proprio account esistente o registrarsi come nuovo utente tramite l'apposito link.
+				<br>
+				Dopo aver effettuato il login o la registrazione, l'utente può scegliere con quale player giocare oppure può semplicemente premere il tasto "INVIO" per iniziare a giocare con il player di default. 
+				<br>
+				Altrimenti può effettuare il logout o eliminare il proprio account tramite gli appositi link.
+				<br>
+			</p>
+				<p>Gli elemti di gioco:</p>
+				<ul>
+					<li>Il player  <img src="./../css/images/Player0.png" alt="player" style="height: 50px; width: 50px;">
+					<li>Il blocco sul quale è posizionato il player
+					<li>Il blocco da raggiungere
+					<li>Il neon-ponte
+					<li>Il bonus
+				</ul>
+			<p>
+				L'<strong>obiettivo</strong> del gioco consiste nel far crescere un "neon-ponte" adatto a far attraversare al player la distanza tra i due blocchi.
+			</p>
+				<p>Istruzioni:</p>
+					<ul>
+						<li>Tieni premuta la barra spazziatrice per far aumentare l'altezza del neon-ponte.
+						<li>Rilascia la barra spaziatrice per arrestare la crescita del neon-ponte.
+						<li>Attendi che il neon-ponte sia caduto per scoprire se sei riuscito a raggiungere il blocco successivo.
+						<li>Cerca di far atterrare il neon-ponte sul bonus per avere un punto extra.
+					</ul>
+			<p>
+				Se l'utente è riuscito a far atterrare il neon-ponte sul bonus, otterrà un punto extra, il bonus colpito cambierà colore e apparirà il messaggio "Perfect!", che sparirà al momento della creazione del neon-ponte successivo.
+				A questo punto il player inizia a muoversi fino a raggiungere la fine del neon-ponte, indipendentemente dalla sua lunghezza.
+				<br>
+				Se il neon-ponte risulterà troppo corto <strong>o troppo lungo</strong>, la partita finirà.	
+				<br><br>
+				<strong>NB:</strong> Il neon-ponte continuerà a crescere anche quando uscirà dalla schermata del gioco.
+				<br><br>
+				Al termine della partita verrà mostrato un popup contenente il punteggio massimo raggiunto dall'utente, seguito da una classifica dei 10 punteggi più alti ottenuti tra gli utenti che possiede un account. 
+				<br>
+				Anche qui è possibile effettuare il logout o eliminare il proprio account.
+			</p>
+		</div>
+
+		<footer>
+			<p>
+				<a href="./howtoplay.html">How to play</a>
+			</p>
+		</footer>
+	</body>
+</html>

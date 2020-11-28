@@ -1,0 +1,162 @@
+body
+{
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:  100% 100%;
+
+	overflow: hidden;
+}
+
+.block
+{
+	background: black;
+	position: absolute;
+}
+
+.player
+{
+	background-image: url('./images/Player0.png');
+	background-position: 100% 100%; 
+	background-repeat: no-repeat;
+	background-size: cover; 
+	position: absolute;
+}
+
+.bridge
+{
+	background-image: linear-gradient(lime, darkgreen); 
+
+ 	box-shadow: 1px 1px 2px black, 0 0 25px lime;
+	position: absolute;
+
+	/*	punto di rotazione dell ponte
+		(in basso a sinistra, quando si
+		trova in posizione verticale)	*/
+	transform-origin: 0% 100%;
+	/* http://www.w3.org/TR/css3-transforms/#transform-origin-property */
+}
+.bonus
+{
+	background: gold; 
+	box-shadow:  1px 1px 2px black, 0 0 25px yellow;
+	position: absolute;
+}
+
+#score
+{
+	color: white;
+
+/*	text-shadow:  (X_distance_px,  Y_distance_px,  BLUR_px,  color) */
+	text-shadow:	10px			  10px			15px	 rgba(138,43,226, 0.7);
+}
+
+#visualbonus
+{
+	color: white;
+
+/*	text-shadow:  (X_distance_px,  Y_distance_px,  BLUR_px,  color) */
+	text-shadow:	10px			  10px			15px	 rgba(138,43,226, 0.7);
+	opacity: 0; /* per il fadeIn */
+}
+
+.response
+{
+	display: inline-block;
+		
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding: 3px;
+
+	position: relative;
+	width: auto;
+
+	/* 
+	"Welcome user, press ENTER to play!", 
+	"Account deleted.", 
+	"Press ENTER to play again!",
+	"Logged out successfully.". */
+	background-color: rgba(0, 255, 0, 0.2); /* verde */
+}
+
+/* "Passwords do not match.", 
+	"Something is missing!", 
+	"Username already taken.", 
+	"Missing username and/or password.". */
+#Pa, #So, #Us, #Mi
+{
+	background-color: rgba(255, 0, 0, 0.2); /* rosso */
+}
+
+.popup
+{
+	top: 10%;
+	left: 15%;
+
+	height: 76%;
+	width: 70%;
+
+	overflow: auto;
+	font-weight: bold;
+
+	position: absolute;
+
+	opacity: 0; /* per il fadeIn */
+	background-color: rgba(180,180,180,0.4);
+}
+
+label, button
+{
+	margin: 5px;
+}
+
+.resizable_text
+{
+	margin: 0.5%;
+}
+
+table
+{
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+
+	border: solid;
+}
+
+caption
+{
+	margin-bottom: 2px;
+}
+
+footer
+{
+	opacity: 0; /* per il fadeIn */
+	background-color: rgba(180,180,180,0.4);
+
+	height: 4%;
+	width: 100%;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+footer p
+{
+	font-weight: bolder;
+	margin: 2px;
+}
+
+/* non visitato */
+a:link {
+  color: GreenYellow;
+  text-decoration: none;
+}
+
+/* visitato */
+a:visited {
+  color: darkred	;
+}
