@@ -3,9 +3,9 @@
 ![Neon Bridges HomePage](https://github.com/ClaudioFio/NeonBridges/blob/main/img/NeonBridges_Home.PNG)
 
 Online video game inspired by [Stick Hero](https://play.google.com/store/apps/details?id=com.ketchapp.stickhero&hl=it&gl=US).<br>
-Made as a University assignment during my Bachelor of Science in Computer Engineering.
+Made as a University assignment during my Bachelor of Science in Computer Engineering.<br><br>
 
-### Description of the game
+## Description of the game
 
 When a user start, the fisrt page that he will find is a login page. Here he can log in with his existing account or register as a new user.<br>
 After logging in or registering, the user can choose which player to play with.<br>
