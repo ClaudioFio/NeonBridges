@@ -1,6 +1,6 @@
 var SPACE_KEY = "32";
 var ENTER_KEY = "13";
-var LEFT_CLICK= "0";
+// var LEFT_CLICK= "0";
 
 function PressEnter(data)
 {
@@ -11,7 +11,7 @@ function swapSkin(skinValue)
 	{
 		skinPlayer=skinValue; 
 		clicked=true;
-		close();
+		close("MouseEvent");
 	}
 
 //ridimensiona il testo rispetto alla finestra

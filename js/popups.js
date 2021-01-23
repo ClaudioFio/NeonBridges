@@ -23,7 +23,7 @@ function welcomePopup()
 	fadeIn(footer, 0.01, 1, 10);
 
 	window.addEventListener('keypress', closeHandler, false);
-	window.addEventListener('onclick', closeHandler, false);
+	//window.addEventListener('onclick', closeHandler, false);
 }
 
 function loginPopup(data)
@@ -151,12 +151,12 @@ function close(event)
 {
 	event = (!event) ? window.event : event; //evento undefined su I.E.
 	var key = (event.which != null) ? event.which : event.keyCode; //event.which su Firefox
-	var mouse = (event.button != null) ? event.button : event.keyButton;
+	// var mouse = (event.button != null) ? event.button : event.keyButton;
 
-	if((key == ENTER_KEY && EnterKeyboardButton)||( mouse== LEFT_CLICK && clicked==true))
+	if((key == ENTER_KEY && EnterKeyboardButton)||( /*mouse== LEFT_CLICK && */ clicked==true))
 	{
 		clicked=false;
-		window.removeEventListener('onclick', closeHandler, false);
+		//window.removeEventListener('onclick', closeHandler, false);
 		window.removeEventListener('keypress', closeHandler, false);
 		window.removeEventListener('resize', resizableTextHandler, false);
 		if(resizableTextHandler2 != null) window.removeEventListener('resize', resizableTextHandler2, false);

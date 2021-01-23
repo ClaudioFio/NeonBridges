@@ -7,7 +7,7 @@ function Player()
 	this.htmlElement = document.createElement('div');
 
 	//percentuali, altrimenti diventerebbe un rettangolo
-	this.WIDTH = 3.5; //rispetto alla larghezza della finestra
+	this.WIDTH = 7; //rispetto alla larghezza della finestra
 	this.movementIncrease = 0.5;
 
 	this.finishSpot = null; //punto di arrivo, in percentuale
